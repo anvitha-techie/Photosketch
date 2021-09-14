@@ -4,7 +4,7 @@ import urllib.request
 import os
 from werkzeug.utils import secure_filename
  
-app = Flask(__name__)
+app = Flask(__name__,static_url_path="/static")
 #run_with_ngrok(app)
  
 UPLOAD_FOLDER = 'static/uploads/'
